@@ -21,6 +21,8 @@ Route::get('hello','HelloController@index');
 Route::get('hello/add','HelloController@add');
 Route::get('hello/show','HelloController@show');
 Route::get('person','PersonController@index');
+Route::get('person/find', 'PersonController@find');
     
 Route::post('hello','HelloController@post');
 Route::post('hello/add', 'Hellocontroller@create');
+Route::post('person/find','personcontroller@search');
