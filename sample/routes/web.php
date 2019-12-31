@@ -22,7 +22,13 @@ Route::get('hello/add','HelloController@add');
 Route::get('hello/show','HelloController@show');
 Route::get('person','PersonController@index');
 Route::get('person/find', 'PersonController@find');
+Route::get('person/add', 'PersonController@add');
+Route::get('person/edit', 'PersonController@edit');
+Route::get('person/del', 'PersonController@delete');
     
 Route::post('hello','HelloController@post');
 Route::post('hello/add', 'Hellocontroller@create');
 Route::post('person/find','personcontroller@search');
+Route::post('person/add', 'PersonController@create');
+Route::post('person/edit', 'PersonController@update');
+Route::post('person/del','PersonController@remove');
